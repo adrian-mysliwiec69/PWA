@@ -13,5 +13,7 @@ content-type: application/json
     "bis_zeit": "13:00:00"
 
 }
+###
+DELETE http://localhost:3000/delWorkshift/10
  
 

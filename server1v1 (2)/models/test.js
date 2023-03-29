@@ -19,5 +19,9 @@ const postWorkshift = async ({ datum, ort, stunden, von_zeit, bis_zeit }) => {
   ]);
   return rows;
 };
+const delKebabstand = async (id) => {
+  await query('delete from arbeit where id = $1', [id]);
+  // Return das Objekt
+};
 
-export { dbTest, getHours, postWorkshift };
+export { dbTest, getHours, postWorkshift, delKebabstand };
