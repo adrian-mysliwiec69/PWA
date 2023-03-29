@@ -1,0 +1,17 @@
+GET http://localhost:3000/test
+################################
+GET http://localhost:3000/getHours
+################################
+Post http://localhost:3000/postWorkshift
+content-type: application/json
+
+{
+    "datum":"2022-03-03",
+    "ort": "Wien",
+    "stunden": 1,
+    "von_zeit": "12:00:00",
+    "bis_zeit": "13:00:00"
+
+}
+ 
+
